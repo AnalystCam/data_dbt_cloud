@@ -1,11 +1,11 @@
 
-# 📊 Customer Sales & Revenue Analytics
+# Customer Sales & Revenue Analytics
 
-A full-stack analytics project demonstrating data engineering, modeling, and business intelligence using modern tools: `dbt`, `Snowflake`, and `Power BI`.
+A full-stack analytics project demonstrating data engineering, modelling, and business intelligence using modern tools: `dbt`, `Snowflake`, and `Power BI`.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project simulates an e-commerce company analyzing customer orders, revenue trends, product performance, and supplier activity. It covers the entire analytics pipeline from raw data ingestion to stakeholder-facing dashboards.
 
@@ -36,12 +36,11 @@ project-root/
 │
 ├── models/
 │   ├── staging/               # Cleaned staging tables (stg_customers, etc.)
-│   ├── marts/                 # Business-ready fact/dim tables
 │   └── customer_revenue/      # Specific domain (orders_fact, customer_summary)
 │
 ├── seeds/                     # Raw CSVs: Customers, Orders, Products, etc.
 │
-├── snapshots/ (optional)
+├── snapshots/ 
 │
 ├── dbt_project.yml            # Project config
 ├── README.md                  # This file
@@ -49,9 +48,8 @@ project-root/
 
 ---
 
-## 🧪 Datasets Used
+##  Datasets Used
 
-Synthetic CSV files created using Faker:
 - `Customers.csv`
 - `Dates.csv`
 - `Employers.csv`
@@ -67,14 +65,14 @@ Synthetic CSV files created using Faker:
 
 ## ⚙️ Setup Instructions
 
-### 1. 🔧 Clone the Project
+### 1.  Clone the Project
 
 ```bash
 git clone https://github.com/your-username/customer-revenue-analytics.git
 cd customer-revenue-analytics
 ```
 
-### 2. 🔑 Configure dbt Profile (`~/.dbt/profiles.yml`)
+### 2.  Configure dbt Profile (`~/.dbt/profiles.yml`)
 
 Example for Snowflake:
 
@@ -94,7 +92,7 @@ your_project_name:
       threads: 4
 ```
 
-### 3. 📥 Install Dependencies & Load Data
+### 3. Install Dependencies & Load Data
 
 ```bash
 dbt deps            # (if you use packages)
@@ -105,7 +103,7 @@ dbt docs generate   # Build documentation
 dbt docs serve      # Open docs in browser
 ```
 
-### 4. 📊 Build Dashboards in Power BI
+### 4. Build Dashboards in Power BI
 
 1. Open Power BI Desktop
 2. Connect to Snowflake (ODBC or native connector)
@@ -119,36 +117,35 @@ dbt docs serve      # Open docs in browser
    - Supplier performance
    - Profitability trends
 
----
 
-## 🧠 Features Demonstrated
 
-- ✅ Data cleaning & staging (using dbt's `stg_` models)
-- ✅ Fact/dimension modeling (star schema)
-- ✅ dbt `ref()` lineage with auto dependency resolution
-- ✅ Data testing: `not null`, `unique`, `relationships`
-- ✅ Documentation with descriptions and column metadata
-- ✅ Snowflake as cloud warehouse
-- ✅ Power BI dashboard design (with interactivity & UX)
+##  Features Demonstrated
 
----
-
-## 📸 Sample Dashboard (Screenshot Placeholder)
-
-> _(Add a dashboard screenshot here)_
+- Data cleaning & staging (using dbt's `stg_` models)
+- Fact/dimension modeling (star schema)
+- dbt `ref()` lineage with auto dependency resolution
+- Data testing: `not null`, `unique`, `relationships`
+- Documentation with descriptions and column metadata
+- Snowflake as cloud warehouse
+- Power BI dashboard design (with interactivity & UX)
 
 ---
 
-## 📌 Future Improvements
+## Dashboard 
+
+
+
+---
+
+## Future Improvements
 - Add orchestration with Airflow or GitHub Actions
 - Integrate dbt exposures for Power BI lineage
-- Apply row-level security (RLS) in Power BI
-- Connect to live APIs for dynamic data loading
+
 
 ---
 
-## 🧑‍💼 Author
+## Author
 
-**Adedayo Gadeola**  
-BI & Analytics Enthusiast | SQL • Power BI • dbt • Snowflake  
-[LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+**Adedayo G. Adeola**  
+BI & Data Engineer | SQL • Power BI • dbt • Snowflake  
+[LinkedIn](https://www.linkedin.com/in/adedayo-adeola/) | [GitHub](https://github.com/AnalystCam)
