@@ -7,7 +7,7 @@ A full-stack analytics project demonstrating data engineering, modelling, and bu
 
 ## Project Overview
 
-This project simulates an e-commerce company analyzing customer orders, revenue trends, product performance, and supplier activity. It covers the entire analytics pipeline from raw data ingestion to stakeholder-facing dashboards.
+This project simulates an e-commerce company analysing customer orders, revenue trends, product performance, and supplier activity. It covers the entire analytics pipeline from raw data ingestion to stakeholder-facing dashboards.
 
 **Key Goals:**
 - Build scalable data pipelines and models using SQL & dbt
@@ -111,29 +111,29 @@ dbt docs serve      # Open docs in browser
    - `orders_fact`
    - `customer_summary`
    - `dim_products`
-4. Build visualizations:
-   - Revenue by region/time
+4. Build visualisations:
+   - Revenue 
    - Top customers/products
-   - Supplier performance
-   - Profitability trends
+   - Customer performance
+     
 
 
 
 ##  Features Demonstrated
 
 - Data cleaning & staging (using dbt's `stg_` models)
-- Fact/dimension modeling (star schema)
+- Fact/dimension modelling (star schema)
 - dbt `ref()` lineage with auto dependency resolution
 - Data testing: `not null`, `unique`, `relationships`
 - Documentation with descriptions and column metadata
-- Snowflake as cloud warehouse
+- Snowflake as a cloud warehouse
 - Power BI dashboard design (with interactivity & UX)
 
 ---
 
 ## Dashboard 
 
-
+![Dashboard](https://github.com/AnalystCam/data_dbt_cloud/blob/main/snapshots/dbt%20Customer%20Dashboard.png)
 
 ---
 
